@@ -1,27 +1,77 @@
 // font-size
-$fz-1: 14px;
-$fz-2: 16px;
-$fz-3: 20px;
-$fz-4: 24px;
-$fz-5: 36px;
-$fz-6: 48px;
-$fz-7: 64px;
-$fz-8: 72px;
+$fz-1: 0.875rem; // 14px
+$fz-2: 1rem; // 16px
+$fz-3: 1.25rem; // 20px
+$fz-4: 1.5rem; // 24px
+$fz-5: 2.25rem; // 36px
+$fz-6: 3rem;  // 48px
+$fz-7: 4rem; // 64px
+$fz-8: 4.5rem; // 72px
 
-// color
-$primary-light: #AA0601;
-$primary-dark: #650300;
+// main color
+$primary: #AA0601;
+$secondary: #650300;
+
+// border color
+
+// font color for layout
 $layout-font-color: #fff;
-// RWD
 
-@mixin pad{
-    @media (max-width: 992px){
-      @content
-    }
-  }
-  
-@mixin mobile{
-    @media (max-width: 767px){
-      @content
-    }
-  }
+
+// margin bottom variables
+$mb-1: 0.5rem;  // 8px
+$mb-2: 1rem;  // 16px
+$mb-3: 1.5rem;  // 24px
+$mb-4: 2rem;  // 32px
+$mb-5: 2.5rem;  // 40px
+$mb-6: 3rem;  // 48px
+$mb-7: 3.5rem; // 56px
+$mb-7-5: 3.75rem; // 60px
+$mb-8: 4rem;  // 64px
+$mb-9: 4.5rem;  // 72px
+$mb-10: 5rem;  // 80px
+
+// margin bottom class
+.mb-1{
+  margin-bottom: $mb-1;
+}
+
+.mb-2{
+  margin-bottom: $mb-2;
+}
+
+.mb-3{
+  margin-bottom: $mb-3;
+}
+
+.mb-4{
+  margin-bottom: $mb-4;
+}
+
+.mb-5{
+  margin-bottom: $mb-5;
+}
+
+.mb-6{
+  margin-bottom: $mb-6;
+}
+
+.mb-7{
+  margin-bottom: $mb-7;
+}
+
+.mb-7-5{
+  margin-bottom: $mb-7-5;
+}
+
+.mb-8{
+  margin-bottom: $mb-8;
+}
+
+.mb-9{
+  margin-bottom: $mb-9;
+}
+
+.mb-10{
+  margin-bottom: $mb-10;
+}

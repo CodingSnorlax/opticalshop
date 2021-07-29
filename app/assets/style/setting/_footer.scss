@@ -1,5 +1,5 @@
 .footer{
-    background-color: $primary-light;
+    background-color: $primary;
     color: $layout-font-color;
     padding: 32px 0 39px 0;
 
@@ -8,17 +8,6 @@
     }
     @include mobile(){
         padding: 25px 15px;
-    }
-}
-
-.container{
-    width: 1110px;
-    margin: 0 auto;
-    @include pad(){
-        width: 100%;
-    }
-    @include mobile(){
-        width: 100%;
     }
 }
 
@@ -99,7 +88,8 @@
 
         }
     
-        h2{
+        a{  
+            @include linkSetting
             font-size: $fz-5;
             color: $layout-font-color;
 

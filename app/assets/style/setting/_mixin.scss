@@ -1,3 +1,12 @@
+
+// mixin tools -----------------------------------
+
+@mixin linkSetting{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
 // 以h1文字包覆logo(SEO優化)
 
 @mixin hideText{
@@ -8,9 +17,15 @@
     text-decoration: none;
 }
 
-@mixin linkSetting{
-    display: block;
-    text-decoration: none;
-    text-align: center;
-}
-
+// RWD -----------------------------------
+@mixin pad{
+    @media (max-width: 992px){
+      @content;
+    }
+  }
+  
+@mixin mobile{
+    @media (max-width: 767px){
+      @content;
+    }
+  }

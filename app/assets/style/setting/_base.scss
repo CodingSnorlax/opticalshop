@@ -1,0 +1,37 @@
+// 引入 google font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
+
+// body 是在 layout.ejs 上的
+body{
+    // 字體: 先加英文再加中文
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    // RWD 圖片防破版設定
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    img{
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// RWD 容器最大寬度設定
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    
+    @include pad(){
+        max-width: 720px;
+    }
+
+    @include mobile(){
+        max-width: 375px;
+    }
+}

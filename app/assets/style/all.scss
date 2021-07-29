@@ -1,9 +1,12 @@
+// 網頁模版 SCSS
 @import 'setting/variable';
 @import 'setting/reset';
 @import 'setting/mixin';
+// mixin要先，因為RWD需要先置入，後面base才吃得到
+@import 'setting/base';
 @import 'setting/header';
 @import 'setting/footer';
 
-body{
-    line-height: 1.5;
-}
+// 各分頁獨立的 SCSS
+@import 'pages/index';
+

@@ -1,0 +1,133 @@
+// 共通區塊 ---------------------------
+
+.mainTitleStyle{
+    color: $secondary;
+    font-size: $fz-6;
+    font-weight: bold;
+}
+
+
+
+// 主視覺：看得清，才能看得遠 ---------------------------
+
+.indexBanner{
+    width: 100%;
+    height: 840px;
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 840px;
+    }
+
+    .bannerTitle{
+        text-align: right;
+    }
+
+    .subtitle{
+        color: $secondary;
+        font-size: $fz-5;
+        font-weight: regular;
+    }
+
+    .title{
+        color: $secondary;
+        font-size: $fz-8;
+        font-weight: bold;
+    }
+}
+
+// 服務：用專業的心，做專業的事 ---------------------------
+
+.service{
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        ul{
+            display: flex;
+        }
+
+        li{
+            width: 255px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 8px;
+            margin: 0 15px;
+        }
+
+        .serviceListPic{
+            width: 83px;
+            height: 83px;
+        }
+
+        .serviceListText{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+
+            h3{
+                color: $secondary;
+                font-weight: bold;
+                font-size: $fz-4;
+            }
+        }
+
+    }
+
+
+}
+
+.classicSeries{
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .classicSeriesContent{
+
+        li{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .classicSeriesText{
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+        width: 445px;
+
+        .blinkIcon{
+            width: 40px;
+            height: 40px;
+        }
+
+        .classicSeriesPic{
+            width: 635px;
+        }
+
+        h2{
+            margin-left: 8px;
+            text-transform: uppercase;
+            color: $primary;
+            font-size: $fz-6;
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+
+}
