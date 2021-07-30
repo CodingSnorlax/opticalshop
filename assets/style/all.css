@@ -510,7 +510,10 @@ body {
       left: 0;
       background-color: rgba(255, 255, 255, 0.5); }
     .coBrand .coBrandProduct .itemDouble {
+      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true");
       margin-right: 30px; }
+    .coBrand .coBrandProduct .itemYouth {
+      background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true"); }
     .coBrand .coBrandProduct h3 {
       z-index: 2;
       font-size: 4.5rem;
