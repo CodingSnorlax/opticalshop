@@ -46,6 +46,7 @@
 // 服務：用專業的心，做專業的事 ---------------------------
 
 .service{
+    background-color: $primary-light;
 
     .container{
         display: flex;
@@ -64,6 +65,14 @@
             justify-content: flex-start;
             padding-top: 8px;
             margin: 0 15px;
+        }
+
+        .sunglassesGroup{
+            display: flex;
+
+            .classicSeriesText{
+                order: 1;
+            }
         }
 
         .serviceListPic{
