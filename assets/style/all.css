@@ -347,23 +347,10 @@ body {
     font-size: 4.5rem;
     font-weight: bold; }
 
-.service .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .service .container ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .service .container li {
-    width: 255px;
+.service {
+  background-color: #AA06010D;
+  padding-top: 60px; }
+  .service .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -373,33 +360,49 @@ body {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding-top: 8px;
-    margin: 0 15px; }
-  .service .container .serviceListPic {
-    width: 83px;
-    height: 83px; }
-  .service .container .serviceListText {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-    .service .container .serviceListText h3 {
-      color: #650300;
-      font-weight: bold;
-      font-size: 1.5rem; }
+            align-items: center; }
+    .service .container ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .service .container li {
+      width: 255px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      padding-top: 8px;
+      margin: 0 15px; }
+    .service .container .serviceListPic {
+      width: 83px;
+      height: 83px; }
+    .service .container .serviceListText {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; }
+      .service .container .serviceListText h3 {
+        color: #650300;
+        font-weight: bold;
+        font-size: 1.5rem; }
 
 .classicSeries .container {
   display: -webkit-box;
@@ -442,5 +445,76 @@ body {
     font-size: 3rem;
     font-weight: bold;
     font-style: italic; }
+
+.classicSeries .sunglassesGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .classicSeries .sunglassesGroup .classicSeriesText {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin-left: 30px; }
+
+.coBrand {
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
+  background-position: center;
+  height: 705px;
+  padding: 60px 0 80px 0; }
+  .coBrand .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .coBrand .mainTitleStyle {
+    color: white; }
+  .coBrand .coBrandProduct {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .coBrand .coBrandProduct li {
+      width: 540px;
+      height: 455px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: relative; }
+    .coBrand .coBrandProduct li::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.5); }
+    .coBrand .coBrandProduct .itemDouble {
+      margin-right: 30px; }
+    .coBrand .coBrandProduct h3 {
+      z-index: 2;
+      font-size: 4.5rem;
+      color: #AA0601;
+      font-weight: bold; }
 
 /*# sourceMappingURL=all.css.map */
