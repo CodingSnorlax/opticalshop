@@ -94,9 +94,13 @@ body {
     max-width: 100%;
     height: auto; }
 
+.w-100 {
+  width: 100%; }
+
 .container {
   max-width: 1140px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 15px; }
   @media (max-width: 992px) {
     .container {
       max-width: 720px; } }
@@ -319,9 +323,23 @@ body {
   color: #650300;
   font-size: 3rem;
   font-weight: bold; }
+  @media (max-width: 992px) {
+    .mainTitleStyle {
+      font-size: 2rem;
+      margin-bottom: 1.25rem; } }
+  @media (max-width: 767px) {
+    .mainTitleStyle {
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem; } }
 
 .sectionPaddingTop {
   padding-top: 60px; }
+  @media (max-width: 992px) {
+    .sectionPaddingTop {
+      padding-top: 40px; } }
+  @media (max-width: 767px) {
+    .sectionPaddingTop {
+      padding-top: 32px; } }
 
 .containerSetting {
   display: -webkit-box;
@@ -335,16 +353,13 @@ body {
       -ms-flex-align: center;
           align-items: center; }
 
-.w-100 {
-  width: 100%; }
-
 .indexBanner {
-  width: 100%;
+  max-width: 100%;
   height: 840px;
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true");
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat; }
   .indexBanner .container {
     display: -webkit-box;
@@ -363,19 +378,47 @@ body {
     color: #650300;
     font-size: 2.25rem;
     font-weight: regular; }
+    @media (max-width: 992px) {
+      .indexBanner .subtitle {
+        font-size: 1.25rem; } }
+    @media (max-width: 767px) {
+      .indexBanner .subtitle {
+        font-size: 1rem; } }
   .indexBanner .title {
     color: #650300;
     font-size: 4.5rem;
     font-weight: bold; }
+    @media (max-width: 992px) {
+      .indexBanner .title {
+        font-size: 3rem; } }
+    @media (max-width: 767px) {
+      .indexBanner .title {
+        font-size: 2rem; } }
 
 .service {
   background-color: #AA06010D; }
+  @media (max-width: 992px) {
+    .service .container .mainTitleStyle {
+      margin-bottom: 40px; } }
+  @media (max-width: 767px) {
+    .service .container .mainTitleStyle {
+      margin-bottom: 28px; } }
   .service .container ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
+    @media (max-width: 992px) {
+      .service .container ul {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        margin-bottom: 3.5rem; } }
+    @media (max-width: 767px) {
+      .service .container ul {
+        margin-bottom: 2.5rem; } }
   .service .container li {
-    width: 255px;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -386,11 +429,19 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-top: 8px;
     margin: 0 15px; }
+    @media (max-width: 992px) {
+      .service .container li {
+        width: 45%;
+        margin-bottom: 45px; } }
+    @media (max-width: 767px) {
+      .service .container li {
+        width: 100%;
+        margin-bottom: 40px; } }
   .service .container .serviceListPic {
     width: 83px;
     height: 83px; }
@@ -420,9 +471,24 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 992px) {
+    .classicSeries .classicSeriesContent li {
+      margin-bottom: 0.5rem; } }
+  @media (max-width: 767px) {
+    .classicSeries .classicSeriesContent li {
+      position: relative;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .classicSeries .classicSeriesContent .classicSeriesPic {
-  width: 635px; }
+  width: 58%; }
+  @media (max-width: 767px) {
+    .classicSeries .classicSeriesContent .classicSeriesPic {
+      width: 100%; } }
 
 .classicSeries .classicSeriesText {
   display: -webkit-box;
@@ -431,17 +497,27 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 445px; }
+  width: 38%; }
+  @media (max-width: 767px) {
+    .classicSeries .classicSeriesText {
+      position: absolute; } }
   .classicSeries .classicSeriesText .blinkIcon {
     width: 40px;
     height: 40px; }
-  .classicSeries .classicSeriesText h2 {
+    @media (max-width: 992px) {
+      .classicSeries .classicSeriesText .blinkIcon {
+        width: 36px;
+        height: 36px; } }
+  .classicSeries .classicSeriesText h3 {
     margin-left: 8px;
     text-transform: uppercase;
     color: #AA0601;
     font-size: 3rem;
     font-weight: bold;
     font-style: italic; }
+    @media (max-width: 992px) {
+      .classicSeries .classicSeriesText h3 {
+        font-size: 28px; } }
 
 .classicSeries .sunglassesGroup {
   display: -webkit-box;
@@ -458,12 +534,33 @@ body {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    @media (max-width: 992px) {
+      .classicSeries .sunglassesGroup .classicSeriesText {
+        -webkit-box-ordinal-group: 2;
+            -ms-flex-order: 1;
+                order: 1;
+        margin-right: 0px;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; } }
+    @media (max-width: 767px) {
+      .classicSeries .sunglassesGroup .classicSeriesText {
+        width: 100%;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; } }
 
 .coBrand {
   background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true");
   background-position: center;
   height: 705px;
   padding-bottom: 80px; }
+  @media (max-width: 992px) {
+    .coBrand {
+      height: 452px; } }
+  @media (max-width: 767px) {
+    .coBrand {
+      height: 719px; } }
   .coBrand .mainTitleStyle {
     color: white; }
   .coBrand .coBrandProduct {
@@ -472,17 +569,20 @@ body {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    max-width: 100%; }
+    @media (max-width: 767px) {
+      .coBrand .coBrandProduct {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
     .coBrand .coBrandProduct li {
       width: 540px;
       height: 455px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -493,6 +593,14 @@ body {
       background-size: cover;
       background-repeat: no-repeat;
       position: relative; }
+      @media (max-width: 992px) {
+        .coBrand .coBrandProduct li {
+          width: 330px;
+          height: 278px; } }
+      @media (max-width: 767px) {
+        .coBrand .coBrandProduct li {
+          width: 345px;
+          height: 291px; } }
     .coBrand .coBrandProduct li::before {
       content: '';
       width: 100%;
@@ -504,6 +612,9 @@ body {
     .coBrand .coBrandProduct .itemDouble {
       background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true");
       margin-right: 30px; }
+      @media (max-width: 767px) {
+        .coBrand .coBrandProduct .itemDouble {
+          margin-bottom: 1rem; } }
     .coBrand .coBrandProduct .itemYouth {
       background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true"); }
     .coBrand .coBrandProduct h3 {
@@ -511,6 +622,12 @@ body {
       font-size: 4.5rem;
       color: #AA0601;
       font-weight: bold; }
+      @media (max-width: 992px) {
+        .coBrand .coBrandProduct h3 {
+          font-size: 2rem; } }
+      @media (max-width: 767px) {
+        .coBrand .coBrandProduct h3 {
+          font-size: 2rem; } }
 
 .customer .customerList {
   width: 100%;
@@ -520,15 +637,33 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  .customer .customerList .customerListItem {
-    width: 255px;
+  @media (max-width: 992px) {
+    .customer .customerList {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin-bottom: 3.5rem; } }
+  @media (max-width: 767px) {
+    .customer .customerList {
+      margin-bottom: 2.5rem; } }
+  .customer .customerList li {
+    width: 23%;
     -webkit-box-shadow: 0px 2px 6px #00000029;
             box-shadow: 0px 2px 6px #00000029;
     border-radius: 4px; }
-    .customer .customerList .customerListItem .customerPic img {
+    @media (max-width: 992px) {
+      .customer .customerList li {
+        width: 48%;
+        margin-bottom: 2rem; } }
+    @media (max-width: 767px) {
+      .customer .customerList li {
+        width: 100%; } }
+    .customer .customerList li .customerPic img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      width: 100%;
       border-radius: 4px 5px 0px 0px; }
   .customer .customerList .customerContent {
-    height: 204px;
+    height: auto;
     padding: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -540,13 +675,19 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (max-width: 992px) {
+      .customer .customerList .customerContent {
+        padding: 24px; } }
   .customer .customerList .customerText {
     color: #212529; }
   .customer .customerList .name {
     font-size: 0.875rem; }
+  .customer .customerList .namePaddingBottom {
+    padding-bottom: 24px; }
   .customer .customerList .date {
     color: #707070;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    padding-top: 76px; }
 
 .contact {
   background-color: #AA06010D; }
@@ -556,6 +697,9 @@ body {
       color: black; }
     .contact .container .contactUsText {
       font-size: 1.25rem; }
+      @media (max-width: 992px) {
+        .contact .container .contactUsText {
+          font-size: 1rem; } }
   .contact .contactForm input {
     border-radius: 4px;
     background-color: transparent;
@@ -563,6 +707,10 @@ body {
     font-size: 1rem;
     height: 50px;
     padding: 16px; }
+    @media (max-width: 992px) {
+      .contact .contactForm input {
+        font-size: 0.875rem;
+        padding: 12px; } }
   .contact .contactForm .suggest textarea {
     border-radius: 4px;
     background-color: transparent;
@@ -570,6 +718,10 @@ body {
     font-size: 1rem;
     height: 136px;
     padding: 16px; }
+    @media (max-width: 992px) {
+      .contact .contactForm .suggest textarea {
+        font-size: 0.875rem;
+        padding: 12px; } }
   .contact .contactForm .contactFormCheckbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -577,6 +729,11 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    @media (max-width: 767px) {
+      .contact .contactForm .contactFormCheckbox {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start; } }
     .contact .contactForm .contactFormCheckbox .checkbox {
       width: 20px;
       height: 20px;
@@ -585,17 +742,22 @@ body {
     text-align: center; }
     .contact .contactForm .contactFormSubmit .submit {
       width: 350px;
+      height: 54px;
       text-align: center;
       background-color: #AA0601;
       color: white;
       border: none;
       border-radius: 0%; }
+      @media (max-width: 992px) {
+        .contact .contactForm .contactFormSubmit .submit {
+          width: 210px;
+          height: 40px;
+          font-size: 0.875rem; } }
+      @media (max-width: 767px) {
+        .contact .contactForm .contactFormSubmit .submit {
+          width: 165px;
+          height: 36px; } }
     .contact .contactForm .contactFormSubmit .submit:hover {
-      width: 350px;
-      text-align: center;
-      background-color: #650300;
-      color: white;
-      border: none;
-      border-radius: 0%; }
+      background-color: #650300; }
 
 /*# sourceMappingURL=all.css.map */
