@@ -4,10 +4,30 @@
     color: $secondary;
     font-size: $fz-6;
     font-weight: bold;
+
+    @include pad(){
+        font-size: $fz-4-5;
+        margin-bottom: $mb-2-5;
+    }
+
+    @include mobile(){
+        font-size: $fz-4;
+        margin-bottom: $mb-2-5;
+    }
+
 }
 
 .sectionPaddingTop{
     padding-top: 60px;
+
+    @include pad(){
+        padding-top: 40px;
+    }
+
+    @include mobile(){
+        padding-top: 32px;
+    }
+
 }
 
 .containerSetting{
@@ -16,22 +36,19 @@
     align-items: center;
 }
 
-.w-100{
-    width: 100%;
-}
-
-
 
 // 主視覺：看得清，才能看得遠 ---------------------------
 
 .indexBanner{
-    width: 100%;
+    max-width: 100%;
     height: 840px;
     background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true');
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
+
+    // RWD 問題1：背景圖位置，應該在眼鏡男與玻璃鏡射的地方
 
     .container{
         display: flex;
@@ -48,12 +65,29 @@
         color: $secondary;
         font-size: $fz-5;
         font-weight: regular;
+
+        @include pad(){
+            font-size: $fz-3;
+        }
+
+        @include mobile(){
+            font-size: $fz-2;
+        }
     }
 
     .title{
         color: $secondary;
         font-size: $fz-8;
         font-weight: bold;
+
+        @include pad(){
+            font-size: $fz-6;
+        }
+
+        @include mobile(){
+            font-size: $fz-4-5;
+        }
+
     }
 }
 
@@ -64,18 +98,48 @@
 
     .container{
 
+        .mainTitleStyle{
+
+            @include pad(){
+                margin-bottom: 40px;
+            }
+
+            @include mobile(){
+                margin-bottom: 28px;
+            }
+        }
+
         ul{
             display: flex;
+
+            @include pad(){
+                flex-wrap: wrap;
+                margin-bottom: $mb-7;
+            }
+            @include mobile(){
+                margin-bottom: $mb-5;
+            }
         }
 
         li{
-            width: 255px;
+            flex-grow: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
             padding-top: 8px;
             margin: 0 15px;
+
+            @include pad(){
+                width: 45%;
+                margin-bottom: 45px;
+            }
+    
+            @include mobile(){
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
         }
 
         .serviceListPic{
@@ -97,8 +161,6 @@
         }
 
     }
-
-
 }
 
 // 經典系列鏡框------------------------------------------------------
@@ -106,15 +168,30 @@
 
 .classicSeries{
 
+
     .classicSeriesContent{
 
         li{
             display: flex;
             justify-content: space-between;
+
+            @include pad(){
+                margin-bottom: $mb-1;
+            }
+
+            @include mobile(){
+                position: relative;
+                align-items: center;
+                justify-content: center;
+            }
         }
 
         .classicSeriesPic{
-            width: 635px;
+            width: 58%;
+
+            @include mobile(){
+                width: 100%;
+            }
         }
 
     }
@@ -122,20 +199,34 @@
     .classicSeriesText{
         display: flex;
         align-items: center;
-        width: 445px;
+        width: 38%;
+
+        @include mobile(){
+            position: absolute;
+        }
 
         .blinkIcon{
             width: 40px;
             height: 40px;
+
+            @include pad(){
+                width: 36px;
+                height: 36px;
+            }
         }
 
-        h2{
+        h3{
             margin-left: 8px;
             text-transform: uppercase;
             color: $primary;
             font-size: $fz-6;
             font-weight: bold;
             font-style: italic;
+
+            @include pad(){
+                font-size: 28px;
+            }
+            
         }
     }
 
@@ -146,7 +237,19 @@
             order: -1;
             margin-right: 30px;
             display: flex;
-            justify-content: flex-end;            
+            justify-content: flex-end;
+            
+            @include pad(){
+                order: 1;
+                margin-right: 0px;
+                justify-content: flex-start;
+            }
+    
+            @include mobile(){
+                width: 100%;
+                justify-content: center;
+            }
+            
         }
     }
 }
@@ -159,25 +262,50 @@
     height: 705px;
     padding-bottom: 80px;
 
+    @include pad(){
+        height: 452px;
+    }
+
+    @include mobile(){
+        height: 719px;
+    }
+
     .mainTitleStyle{
         color: white;
+
     }
 
     .coBrandProduct{
         display: flex;
         justify-content: space-between;
+        max-width: 100%;
+
+        @include mobile(){
+            
+            flex-direction: column;
+        }
 
         li{
             width: 540px;
             height: 455px;
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
             position: relative;
+
+            @include pad(){
+                width: 330px;
+                height: 278px;
+            }
+    
+            @include mobile(){
+                width: 345px;
+                height: 291px;
+            }
+
         }
 
         li::before{
@@ -193,6 +321,10 @@
         .itemDouble{
             background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true');
             margin-right: 30px;
+
+            @include mobile(){
+                margin-bottom: $mb-2;
+            }
         }
 
         .itemYouth{
@@ -204,6 +336,15 @@
             font-size: $fz-8;
             color: $primary;
             font-weight: bold;
+
+            @include pad(){
+                font-size: $fz-4-5;
+            }
+    
+            @include mobile(){
+                font-size: $fz-4-5;
+            }
+
         }
     }
 }
@@ -217,25 +358,49 @@
         display: flex;
         justify-content: space-between;
 
-        .customerListItem{
-            width: 255px;
+        @include pad(){
+            flex-wrap: wrap;
+            margin-bottom: $mb-7;
+        }
+
+        @include mobile(){
+            margin-bottom: $mb-5;
+        }
+
+
+        li{
+            width: 23%;
             box-shadow: 0px 2px 6px #00000029;
             border-radius: 4px;
 
-            .customerPic{
+            @include pad(){
+                width: 48%;
+                margin-bottom: $mb-4;
+            }
+    
+            @include mobile(){
+                width: 100%;
+            }
 
+            .customerPic{
                 img{
+                    object-fit: cover;
+                    width: 100%;
                     border-radius: 4px 5px 0px 0px;
                 }
             }
         }
 
         .customerContent{
-            height: 204px;  // 寫死高度是否可以？因為需要把日期跟文字推開
+            height: auto;
             padding: 16px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
+            @include pad(){
+                padding: 24px;
+            }
         }
 
         .customerText{
@@ -246,9 +411,14 @@
             font-size: $fz-1;
         }
 
+        .namePaddingBottom{
+            padding-bottom: 24px;
+        }
+
         .date{
             color: #707070;
             font-size: $fz-1;
+            padding-top: 76px;
         }
     }
 
@@ -270,6 +440,10 @@
 
         .contactUsText{
             font-size: $fz-3;
+
+            @include pad(){
+                font-size: $fz-2;
+            }
         }
 
     }
@@ -284,6 +458,11 @@
             font-size: $fz-2;
             height: 50px;
             padding: 16px;
+
+            @include pad(){
+                font-size: $fz-1;
+                padding: 12px;
+            }
         }
 
         .suggest textarea{
@@ -293,6 +472,11 @@
             font-size: $fz-2;
             height: 136px;
             padding: 16px;
+
+            @include pad(){
+                font-size: $fz-1;
+                padding: 12px;
+            }
         }
 
         // 聯絡我們的隱私權勾選 ------------------------------------
@@ -301,6 +485,10 @@
             display: flex;
             align-items: center;
 
+            @include mobile(){
+                align-items: flex-start;
+            }
+
             .checkbox{
                 width: 20px;
                 height: 20px;
@@ -308,26 +496,35 @@
             }
         }
 
+        // 聯絡我們的送出鍵 ------------------------------------
+
         .contactFormSubmit{
 
             text-align: center;
             
                 .submit{
                     width: 350px;
+                    height: 54px;
                     text-align: center;
                     background-color: $primary;
                     color: white;
                     border: none;
                     border-radius: 0%;
+
+                    @include pad(){
+                        width: 210px;
+                        height: 40px;
+                        font-size: $fz-1;
+                    }
+
+                    @include mobile(){
+                        width: 165px;
+                        height: 36px;
+                    }
                 }
 
                 .submit:hover{
-                    width: 350px;
-                    text-align: center;
                     background-color: $secondary;
-                    color: white;
-                    border: none;
-                    border-radius: 0%;
                 }
         }
 
