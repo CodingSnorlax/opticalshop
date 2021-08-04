@@ -1,0 +1,153 @@
+
+// 系列鏡框 墨鏡 導覽列 --------------------------------------------------
+
+.productSgMenu{
+
+    li{
+        flex-grow: 1;
+        border: 1px solid #DCDCDC;
+
+        a{
+            border-bottom: 8px solid transparent;
+
+            @include mobile(){
+                border-bottom: 4px solid transparent;
+            }
+        }
+
+        .navActive{
+            border-bottom: 8px solid $primary;
+
+            @include mobile(){
+                border-bottom: 4px solid $primary;
+            }
+        }
+    }
+}
+
+// 系列鏡框 墨鏡 主視覺 --------------------------------------------------
+
+.productSgKv{
+    @include pad(){
+        margin-bottom: $mb-7;
+    }
+    @include mobile(){
+        margin-bottom: $mb-4;
+    }
+}
+
+.sgPageKvPic{
+    width: 50%;
+    height: 304px;
+    overflow: hidden;
+
+    @include mobile(){
+        height: 148px;
+    }
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+// 系列鏡框 光學鏡片 商品區塊 --------------------------------------------------
+
+.sgProductContent{
+
+    @include pad(){
+        margin-bottom: 96px;
+    }
+    @include mobile(){
+        margin-bottom: 56px;
+    }
+
+    .sgProductTitle{
+
+        h2{
+            font-size: 42px;
+            @include pad(){
+                font-size: $fz-4-5;
+            }
+            @include mobile(){
+                font-size: $fz-3;
+            }
+        }
+        h3{
+            font-size: $fz-4-5;
+            @include pad(){
+                font-size: $fz-4;
+            }
+            @include mobile(){
+                font-size: $fz-2;
+            }
+        }
+    }
+}
+
+.sgProductList{
+
+    justify-content: space-between;
+
+    li{
+        width: 31%;
+        margin-bottom: $mb-13;
+
+        @include pad(){
+            width: 46%;
+            margin-bottom: $mb-9;
+        }
+        @include mobile(){
+            width: 100%;
+            margin-bottom: $mb-4;
+        }
+    }
+
+    .sgProductPic{
+        width: 350px;
+        height: 224px;
+
+        @include pad(){
+            width: 330px;
+            height: 164px;
+        }
+        @include mobile(){
+            width: 345px;
+            height: 166px;
+        }
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .sgProductText{
+        display: flex;
+        justify-content: space-between;
+        font-size: $fz-4;
+
+        @include mobile(){
+            font-size: $fz-2;
+        }
+
+        .price{
+            color: $primary;
+            font-weight: bold;
+        }
+    }
+
+    .darkBrownBox{
+        margin-right: 0.5rem;
+        background-color: #5F3E2D;
+    }
+
+    .lightBrownBox{
+        background-color: #B75929;
+    }
+}
+
+

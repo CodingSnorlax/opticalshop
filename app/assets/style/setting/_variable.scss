@@ -9,12 +9,14 @@ $fz-6: 3rem;  // 48px
 $fz-7: 4rem; // 64px
 $fz-8: 4.5rem; // 72px
 
+
 // main color
 $primary: #AA0601;
 $primary-light: #AA06010D;
 $secondary: #650300;
 
 // border color
+
 
 // font color for layout
 $layout-font-color: #fff;
@@ -33,6 +35,10 @@ $mb-7-5: 3.75rem; // 60px
 $mb-8: 4rem;  // 64px
 $mb-9: 4.5rem;  // 72px
 $mb-10: 5rem;  // 80px
+
+$mb-13: 6.5rem; // 104px
+
+$mb-20: 10rem;  // 160px
 
 // margin bottom class
 .mb-1{
@@ -81,4 +87,12 @@ $mb-10: 5rem;  // 80px
 
 .mb-10{
   margin-bottom: $mb-10;
+}
+
+.mb-13{
+  margin-bottom: $mb-13;
+}
+
+.mb-20{
+  margin-bottom: $mb-20;
 }

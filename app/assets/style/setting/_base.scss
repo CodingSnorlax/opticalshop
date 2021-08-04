@@ -27,6 +27,72 @@ body{
     width: 100%;
 }
 
+.text-center{
+    text-align: center;
+}
+
+// flex 設定
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+
+// Product 頁面的 nav Bar 設定
+
+    .material-icons{
+        font-size: $fz-4-5;
+        margin-right: 10px;
+    
+        @include pad(){
+            font-size: $fz-4;
+        }
+        @include mobile(){
+            font-size: $fz-1;
+        }
+    }
+    
+    .navProductBtn{
+        font-size: $fz-4-5;
+        color: black;
+        @include linkSetting;
+        padding: 20px 0;
+    
+        @include pad(){
+            font-size: $fz-4;
+            padding: 10px 0;
+        }
+        @include mobile(){
+            font-size: $fz-1;
+            padding: 4px 0;
+        }
+    }
+
+
+
+// Product 產品顏色盒子
+
+.colorBox{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+
+
 
 // RWD 容器最大寬度設定 (及留邊距)
 

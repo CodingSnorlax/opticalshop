@@ -45,8 +45,14 @@
     background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true');
     background-size: cover;
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
+
+    @include mobile(){
+    background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png');
+    background-position: -15px -115px;
+    height: 394px;
+}
 
     // RWD 問題1：背景圖位置，應該在眼鏡男與玻璃鏡射的地方
 
@@ -55,6 +61,10 @@
         justify-content: flex-end;
         align-items: center;
         height: 840px;
+
+        @include mobile(){
+            height: 394px;
+        }
     }
 
     .bannerTitle{
@@ -203,6 +213,8 @@
 
         @include mobile(){
             position: absolute;
+            width: 100%;
+            justify-content: center;
         }
 
         .blinkIcon{
@@ -372,6 +384,8 @@
             width: 23%;
             box-shadow: 0px 2px 6px #00000029;
             border-radius: 4px;
+            display: flex;  // 使文字內容在這個 li 之內一定會有固定高度
+            flex-direction: column;  // 使文字內容在這個 li 之內一定會有固定高度
 
             @include pad(){
                 width: 48%;
@@ -392,12 +406,12 @@
         }
 
         .customerContent{
-            height: auto;
             padding: 16px;
+            flex-grow: 1;   // 使文字內容在這個 li 之內一定會有固定高度
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
+            
             @include pad(){
                 padding: 24px;
             }
@@ -411,9 +425,6 @@
             font-size: $fz-1;
         }
 
-        .namePaddingBottom{
-            padding-bottom: 24px;
-        }
 
         .date{
             color: #707070;
@@ -456,8 +467,8 @@
             background-color: transparent;
             border: 1px solid black;
             font-size: $fz-2;
-            height: 50px;
             padding: 16px;
+            // input 也不需要寫死高度
 
             @include pad(){
                 font-size: $fz-1;
@@ -476,6 +487,7 @@
             @include pad(){
                 font-size: $fz-1;
                 padding: 12px;
+                height: 100px;
             }
         }
 
@@ -504,7 +516,6 @@
             
                 .submit{
                     width: 350px;
-                    height: 54px;
                     text-align: center;
                     background-color: $primary;
                     color: white;
@@ -513,13 +524,11 @@
 
                     @include pad(){
                         width: 210px;
-                        height: 40px;
                         font-size: $fz-1;
                     }
 
                     @include mobile(){
                         width: 165px;
-                        height: 36px;
                     }
                 }
 
