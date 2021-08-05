@@ -16,7 +16,7 @@ $primary-light: #AA06010D;
 $secondary: #650300;
 
 // border color
-
+$border-left-title-color: #9F1213;
 
 // font color for layout
 $layout-font-color: #fff;
@@ -36,6 +36,7 @@ $mb-8: 4rem;  // 64px
 $mb-9: 4.5rem;  // 72px
 $mb-10: 5rem;  // 80px
 
+$mb-12: 6rem; // 96px
 $mb-13: 6.5rem; // 104px
 
 $mb-20: 10rem;  // 160px
@@ -87,6 +88,11 @@ $mb-20: 10rem;  // 160px
 
 .mb-10{
   margin-bottom: $mb-10;
+}
+
+
+.mb-12{
+  margin-bottom: $mb-12;
 }
 
 .mb-13{

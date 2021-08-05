@@ -48,6 +48,10 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    @include pad(){
+        background-attachment: scroll;
+    }
+
     @include mobile(){
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png');
     background-position: left center;

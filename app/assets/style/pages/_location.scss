@@ -1,0 +1,152 @@
+
+.locationMain{
+    padding-top: 96px;
+    margin-bottom: 128px;
+    @include pad(){
+        padding-top: 60px;
+        margin-bottom: 72px;
+    }
+    @include mobile(){
+        padding-top: 28px;
+        margin-bottom: 36px;
+    }
+
+    // 本頁標題：門市據點 ------------------------------------------------------------------
+
+    .locationMainTitle{
+        @include mainTitleWithBorder
+    }
+
+    // 下拉選單區塊：選擇地區 ------------------------------------------------------------------
+
+    .selectLocation{
+        vertical-align: middle;
+        span{
+            display: block;
+            font-size: $fz-4;
+            @include pad(){
+                font-size: $fz-2;
+            }
+            @include mobile(){
+                font-size: $fz-1;
+            }
+        }
+
+        select{
+            display: block;
+            color: #495057;
+            border: 1px solid #CED4DA;
+            width: 324px;
+            font-size: 18px;
+            padding: 8px 0 11px 19px;
+            border-radius: 5px;
+            margin-left: 20px;
+
+            @include pad(){
+                width: 237px;
+                font-size: $fz-2;
+                padding: 12px 0 12px 16px;
+            }
+            @include mobile(){
+                width: 277px;
+                font-size: $fz-1;
+                padding: 8px 0 8px 16px;
+                margin-left: 12px;
+            }
+        }
+    }
+
+    // 台北市各門市 Card 區塊 ------------------------------------------------------------------
+
+
+    .taipeiCardGroup{
+
+        @include pad(){
+            justify-content: space-between;
+        }
+
+        .cardTaipei{
+            width: 30%;
+            margin: 0 15px 32px 15px;
+
+            @include pad(){
+                width: 48%;
+                margin: 0 0 20px 0;
+            }
+            @include mobile(){
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            .pic{
+                height: 224px;
+
+                @include pad(){
+                    height: 164px;
+                }                
+
+                // 想問助教：這邊若不將img套外容器，左下角那張圖是跟其他大小不一樣的，要如何讓圖片都同高？
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+            }
+        }
+
+        .cardBody{
+            color: #212529;
+            border: 1px solid #00000020;
+
+            h3{
+                padding: 12px 0 12px 24px;
+                font-size: $fz-4;
+                @include pad(){
+                    padding: 8px 0 8px 24px;
+                    font-size: $fz-2;
+                }
+            }
+
+            ul{
+                padding: 16px 24px 8px 24px;
+                border-top: 1px solid #00000020;
+
+                li{
+                    margin-bottom: $mb-1;
+                    font-size: $fz-3;
+
+                    @include pad(){
+                        font-size: $fz-1;
+                    }
+
+                    span{
+                        font-size: $fz-3;
+                        @include pad(){
+                            font-size: $fz-1;
+                        }
+                    }
+                }
+            }
+
+            a{
+                @include linkSetting;
+                background-color: black;
+                color: white;
+                padding: 20px 0;
+
+                @include pad(){
+                    font-size: $fz-1;
+                }
+            }
+
+            a:hover{
+                background-color: rgb(212, 212, 212);
+                color: black;
+            }
+        }
+        
+        
+    }
+
+}

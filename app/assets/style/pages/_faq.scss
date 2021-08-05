@@ -1,0 +1,70 @@
+.faqMainContent{
+    padding-top: 96px;
+    margin-bottom: 128px;
+
+    @include pad(){
+        padding-top: 60px;
+        margin-bottom: 72px;
+    }
+
+    @include mobile(){
+        padding-top: 28px;
+        margin-bottom: 36px;
+    }
+
+
+    .faqMainTitle{
+        @include mainTitleWithBorder
+    }
+
+    .faqFirstQuestPart{
+        font-size: $fz-4-5;
+        margin-bottom: 36px;
+        font-weight: bold;
+
+        @include pad(){
+            margin-bottom: $mb-4;
+        }
+
+        @include mobile(){
+            font-size: $fz-3;
+            margin-bottom: $mb-3;
+        }
+
+    }
+
+    .faqFirstQuestList{
+        
+        li{
+            margin-bottom: $mb-4;
+
+            @include pad(){
+                margin-bottom: $mb-3;
+            }
+
+            @include mobile(){
+                margin-bottom: $mb-2-5;
+            }
+
+            h4{
+                font-weight: bold;
+                font-size: $fz-3;
+                margin-bottom: $mb-2;
+
+                @include mobile(){
+                    margin-bottom: $mb-1;
+                    font-size: $fz-2;
+                }
+            }
+
+            p{
+                @include mobile(){
+                    font-size: $fz-1;
+                }
+            }
+        }
+    }
+    
+}
+
+
