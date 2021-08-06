@@ -44,13 +44,8 @@
     height: 840px;
     background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true');
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-
-    @include pad(){
-        background-attachment: scroll;
-    }
 
     @include mobile(){
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/banner-sm.png');

@@ -66,8 +66,9 @@
         }
 
         .cardTaipei{
-            width: 30%;
-            margin: 0 15px 32px 15px;
+            width: 33.33%;
+            padding: 0 15px 32px 15px;
+            // margin: 0 15px 32px 15px;
 
             @include pad(){
                 width: 48%;
@@ -95,6 +96,7 @@
             }
         }
 
+        
         .cardBody{
             color: #212529;
             border: 1px solid #00000020;
@@ -150,3 +152,6 @@
     }
 
 }
+
+
+

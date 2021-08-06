@@ -1,6 +1,57 @@
 ---
-title: 中山旗艦店 Optical Shop 
+title: 台北101旗艦店 Optical Shop 
 layout: ./app/layout.ejs
 engine: ejs
-current: 門市據點 中山旗艦店
+current: 門市據點 台北101旗艦店
 ---
+
+<div class="container">
+
+    <div class="locationMain">
+
+        <h2 class="locationMainTitle">門市據點</h2>
+        
+        <div class="selectLocation d-flex align-items-center mb-4">
+            <span>選擇地區</span>
+            <select name="所有門市">
+                <optgroup label="台北市">
+                    <option>台北101旗艦店</option>
+                    <option>台北車站分店</option>
+                    <option>台北中山分店</option>
+                    <option>台北東區分店</option>
+                    <option>台北天母分店</option>
+                </optgroup>
+                <optgroup label="新北市">
+                    <option>新北板橋分店</option>
+                    <option>新北永和分店</option>
+                    <option>新北土城分店</option>
+                </optgroup>
+              </select>
+        </div>
+
+        <div class="shopInfo d-flex">
+
+            <div class="firstShopCard">
+                <div class="pic">
+                    <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week4/locate1.jpeg?raw=true" alt="台北101旗艦店">
+                </div>
+                <div class="cardBody">
+                    <h3>台北101旗艦店</h3>
+                    <ul>
+                        <li><span class="material-icons">phone</span>電話：(02)2838-1234</li>
+                        <li><span class="material-icons">schedule</span>營業時間：10:00-21:00</li>
+                        <li><span class="material-icons">place</span>地址：台北市信義區信義路</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14460.031820041626!2d121.5645561!3d25.0338041!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xacc4d11dc963103c!2z5Y-w5YyXMTAx!5e0!3m2!1szh-TW!2stw!4v1628223391907!5m2!1szh-TW!2stw" width="635" height="422" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
