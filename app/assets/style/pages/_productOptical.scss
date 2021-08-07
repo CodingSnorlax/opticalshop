@@ -151,36 +151,6 @@
 
 }
 
-// 系列鏡框 光學鏡片 商品區塊 頁碼 --------------------------------------------------
-
-.opticalProductPagination{
-
-    @include mobile(){
-        width: 100%;
-    }
-
-    li{
-        border: 1px solid #555555;
-        flex-grow: 1;
-    }
-
-    li:last-child{
-        background-color: #F2F2F2;
-    }
-
-    a{
-        @include linkSetting;
-        padding: 12px 16px;
-        color: #555555;
-
-        @include mobile(){
-            padding: 12px 13px;
-        }
-    }
-
-    a:hover{
-        background-color: black;
-        color: white;
-    }
-
+.opticalPagination{
+    @include pagination;
 }

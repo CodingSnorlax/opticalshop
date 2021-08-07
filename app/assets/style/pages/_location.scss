@@ -61,6 +61,9 @@
 
     .taipeiCardGroup{
 
+        margin: 0 -15px;
+        // 左右內縮15px，解決card的左右padding多出15px無法貼齊container的問題
+
         @include pad(){
             justify-content: space-between;
         }

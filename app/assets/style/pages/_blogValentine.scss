@@ -1,0 +1,264 @@
+// 此頁導覽列樣式在 blogMain.scss
+
+.blogValentineNav{
+    background-color: $secondary;
+    
+
+    .blogNavBtn{
+
+        @include mobile(){
+            padding: 0 3px;
+            margin: 0 -15px;
+        }
+
+        a{
+            @include linkSetting;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px 0;
+            margin-right: 48px;
+
+            @include pad(){
+                font-size: 16px;
+                padding: 16px 0;
+                margin-right: 32px;
+                @include mobile(){
+                    padding: 16px 12px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .searchIcon{
+        @include mobile(){
+            display: none;
+        }
+    }
+}
+
+// 導覽列下方的 BLOG breadcrumb ------------------------------------------
+
+.breadcrumb{
+
+    li{
+        a{
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+
+            @include pad(){
+                font-size: $fz-1;
+            }
+        }
+    }
+
+    li:last-child a{
+        color: $primary;
+    }
+
+    li:last-child::after{
+        display: none;
+    }
+
+    li::after{
+        content: '/';
+        margin: 0 5px;
+    }
+}
+
+// 文章上方的 tags ------------------------------------------------------------
+
+.articleTags{
+
+    span{
+        color: $primary;
+        font-weight: bold;
+        margin-right: 16px;
+        font-size: $fz-4;
+
+        @include pad(){
+            font-size: $fz-2;
+        }
+        @include mobile(){
+            font-size: $fz-1;
+        }
+    }
+
+}
+
+// 主內容 左區塊 主要文章 --------------------------------------------------
+
+.blogValentine{
+    @include mobile(){
+        flex-direction: column;
+    }
+}
+
+.blogValentineMain{
+    width: 74.5%;
+    margin-right: 30px;
+    padding-bottom: 160px;
+
+    @include pad(){
+        padding-bottom: 96px;
+    }
+
+    @include mobile(){
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    h2{
+        font-size: $fz-6;
+        margin-bottom: $mb-1;
+        @include pad(){
+            font-size: 32px;
+        }
+        @include mobile(){
+            font-size: 20px;
+            color: $secondary;
+        }
+    }
+
+    .textBox{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $mb-3;
+        @include mobile(){
+            margin-bottom: $mb-2-5;
+        }
+    }
+
+    .textBox span{
+        @include pad(){
+            font-size: $fz-1;
+        }
+    }
+
+    .enTitle{
+        font-weight: bold;
+        font-size: $fz-3;
+        @include pad(){
+            font-size: $fz-2;
+        }
+    }
+}
+
+.blogMainContent{
+
+    li{
+        margin-bottom: $mb-5;
+        @include pad(){
+            margin-bottom: $mb-3;
+        }
+
+        img{
+            margin-bottom: $mb-3;
+            @include pad(){
+                margin-bottom: $mb-2;
+            }
+        }
+
+        p{
+            font-size: $fz-3;
+            @include pad(){
+                font-size: $fz-2;
+            }
+        }
+    }
+}
+
+// 主內容 左區塊 footer -----------------------------------------
+
+.shareSocialMedia{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 24px;
+
+    @include pad(){
+        margin-bottom: 16px;
+    }
+    @include mobile(){
+        padding-bottom: 16px;
+        margin-bottom: 10px;
+    }
+
+    li{
+        margin-right: 16px;
+    }
+}
+
+.pageBtn{
+    @include mobile(){
+        flex-direction: column;
+        align-items: flex-start
+    }
+    a{
+        @include linkSetting;
+
+        span{
+            vertical-align: middle;
+            color: black;
+            font-size: 20px;
+            @include pad(){
+                font-size: $fz-2;
+            }
+            @include mobile(){
+                font-size: $fz-1;
+            }
+        }
+    }
+
+    .nextPageBtn{
+        @include mobile(){
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+// 主內容 右區塊 sidebar 文章tags ------------------------------------------
+
+.tagSidebar{
+    width: 25.5%;
+    @include mobile(){
+        width: 100%;
+        margin-bottom: $mb-7;
+    }
+}
+
+.sidebarTitle{
+    font-weight: bold;
+    font-size: 28px;
+    color: $primary;
+    @include pad(){
+        font-size: $fz-3;
+    }
+}
+
+.sidebarArticleTags{
+
+    li{
+        margin-right: 22px;
+        @include mobile(){
+            margin-right: 8px;
+        }
+
+        a{  
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+            color: $primary;
+
+            @include pad(){
+                font-size: $fz-2;
+            }
+        }
+
+    }
+}
+
