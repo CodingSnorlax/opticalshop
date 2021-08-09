@@ -1,12 +1,26 @@
-// 網頁模版 SCSS
-@import 'setting/variable';
-@import 'setting/reset';
-@import 'setting/mixin';
+// 全域設定: 字型、reset、mixin、base------------------------------------------
+// 引入 google font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap');
 
-// mixin要先，因為RWD需要先置入，後面base才吃得到
-@import 'setting/base';
-@import 'setting/header';
-@import 'setting/footer';
+@import 'base/reset'; 
+@import 'setting/mixin';  // mixin要先，因為RWD需要先置入，後面base才吃得到
+@import 'base/base';
+
+// 通用設定
+@import 'setting/container';
+@import 'setting/variable';  // 變數先設定好，後面的utilities才抓得到
+@import 'setting/utilities';
+
+// 元件 (components)
+@import 'components/pagination';
+@import 'components/breadcrumb';
+@import 'components/mainTitleWithBorder';
+@import 'components/productNavBar';
+@import 'components/productColorBox';
+
+// 全站網頁的表頭及表尾
+@import 'layout/header';
+@import 'layout/footer';
 
 // 各分頁獨立的 SCSS
 @import 'pages/index';
@@ -17,4 +31,3 @@
 @import 'pages/locationMap.scss';
 @import 'pages/blogMain';
 @import 'pages/blogValentine';
-

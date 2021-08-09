@@ -1,0 +1,20 @@
+// body 是在 layout.ejs 上的
+body{
+    // 字體: 先加英文再加中文
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    // RWD 圖片防破版設定
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    img{
+        vertical-align: middle;
+        max-width: 100%;
+        height: auto;
+    }
+}
+

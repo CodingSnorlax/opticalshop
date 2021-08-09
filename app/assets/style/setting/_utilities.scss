@@ -1,0 +1,99 @@
+// 共通設定
+
+.w-100{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+// margin bottom class
+.mb-1{
+    margin-bottom: $mb-1;
+  }
+  
+  .mb-2{
+    margin-bottom: $mb-2;
+  }
+  
+  .mb-2-5{
+    margin-bottom: $mb-2-5;
+  }
+  
+  .mb-3{
+    margin-bottom: $mb-3;
+  }
+  
+  .mb-4{
+    margin-bottom: $mb-4;
+  }
+  
+  .mb-5{
+    margin-bottom: $mb-5;
+  }
+  
+  .mb-6{
+    margin-bottom: $mb-6;
+  }
+  
+  .mb-7{
+    margin-bottom: $mb-7;
+  }
+  
+  .mb-7-5{
+    margin-bottom: $mb-7-5;
+  }
+  
+  .mb-8{
+    margin-bottom: $mb-8;
+  }
+  
+  .mb-9{
+    margin-bottom: $mb-9;
+  }
+  
+  .mb-10{
+    margin-bottom: $mb-10;
+  }
+  
+  
+  .mb-12{
+    margin-bottom: $mb-12;
+  }
+  
+  .mb-13{
+    margin-bottom: $mb-13;
+  }
+  
+  .mb-20{
+    margin-bottom: $mb-20;
+  }
+
+// flex 設定
+
+.d-flex{
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+

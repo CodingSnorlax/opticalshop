@@ -1,0 +1,15 @@
+// RWD 容器最大寬度設定 (及留邊距)
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;   // 這兩行不再重複寫，平板跟手機會繼承
+    padding: 0 15px;  // 這兩行不再重複寫，平板跟手機會繼承
+    
+    @include pad(){
+        max-width: 720px;
+    }
+
+    @include mobile(){
+        max-width: 375px;
+    }
+}

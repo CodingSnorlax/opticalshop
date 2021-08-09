@@ -1,0 +1,30 @@
+
+// 導覽列下方的 BLOG breadcrumb ------------------------------------------
+
+.breadcrumb{
+
+    li{
+        a{
+            text-decoration: none;
+            color: black;
+            display: inline-block;
+
+            @include pad(){
+                font-size: $fz-1;
+            }
+        }
+    }
+
+    li:last-child a{
+        color: $primary;
+    }
+
+    li:last-child::after{
+        display: none;
+    }
+
+    li::after{
+        content: '/';
+        margin: 0 5px;
+    }
+}

@@ -1,0 +1,29 @@
+// Product 頁面的 nav Bar 設定
+
+.material-icons{
+    font-size: $fz-4-5;
+    margin-right: 10px;
+
+    @include pad(){
+        font-size: $fz-4;
+    }
+    @include mobile(){
+        font-size: $fz-1;
+    }
+}
+
+.navProductBtn{
+    font-size: $fz-4-5;
+    color: black;
+    @include linkSetting;
+    padding: 20px 0;
+
+    @include pad(){
+        font-size: $fz-4;
+        padding: 10px 0;
+    }
+    @include mobile(){
+        font-size: $fz-1;
+        padding: 4px 0;
+    }
+}
